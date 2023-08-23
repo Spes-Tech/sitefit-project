@@ -1,31 +1,14 @@
-    import React from "react"
+import React from 'react'
 
-    const Section = () => {
-    return (
-    <div className="section">
-                            
-    <div className="flex flex-row">
-
-        <div className="basis-1/2 flex justify-center items-center h-screen">
-
-       <h1 className="text-3xl font-bold mb-2">Titulo
-       
-        <h1 className="text-gray-600">Corpo do texto</h1>
-        
-        </h1>
-       
-       <div>
-     
-       </div>
-       
-    
-        </div>
-
+const Section = () => {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+      <div className="text-center">
+        <h1 className="mb-4 text-4xl font-bold">Meu Título</h1>
+        <p className="text-gray-700">Este é um parágrafo de exemplo.</p>
+      </div>
     </div>
+  )
+}
 
-    </div>
-                    )
-                };
-                
-export default Section;
-
+export default Section
