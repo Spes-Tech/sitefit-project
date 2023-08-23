@@ -2,6 +2,9 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
+import Section from './components/Section'; 
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +21,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <nav className="mx-auto max-w-5xl px-8">Header</nav>
         </header>
         {children}
+
+        <div>
+      
+      <Section /> {/* Usando o componente Section */}
+    </div>
+     
       </body>
     </html>
   )
