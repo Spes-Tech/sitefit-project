@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt-br">
       <body className={inter.className}>
         <header className="h-16 border">
-          <nav className="mx-auto max-w-5xl px-8">Header</nav>
+          <nav className="mx-auto max-w-5xl px-4 lg:px-8">Header</nav>
         </header>
         {children}
 
