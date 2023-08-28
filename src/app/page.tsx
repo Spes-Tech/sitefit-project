@@ -1,3 +1,4 @@
+import Button from '@/components/button'
 import Carousel from '@/components/carousel'
 import Modal from '@/components/modal'
 import PostsCarousel from '@/components/postCarousel'
@@ -12,13 +13,9 @@ export default function Home() {
       <PostsCarousel />
       <Space />
       <Modal className="text-center">
-        <button
-          type="button"
-          className="rounded bg-gray-400 px-5 py-2 font-semibold transition-all hover:opacity-80"
-        >
-          Open Modal
-        </button>
+        <Button>Open modal</Button>
       </Modal>
+      <Space />
     </main>
   )
 }
