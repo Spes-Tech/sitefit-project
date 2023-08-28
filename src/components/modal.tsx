@@ -24,9 +24,18 @@ function Modal({
     setIsModalOpen(false)
     document.body.style.overflow = ''
   }
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'Escape') {
+      closeModal()
+    }
+  }
+
   return (
     <div className={className}>
-      <div onClick={openModal}>{children}</div>
+      <div onClick={openModal} onKeyDown={handleKeyDown}>
+        {children}
+      </div>
       {isModalOpen && (
         <div
           className="bg-primary/60 fixed inset-0 z-50 flex h-screen w-screen items-center justify-center backdrop-blur-xl transition-opacity delay-700 duration-1000"
