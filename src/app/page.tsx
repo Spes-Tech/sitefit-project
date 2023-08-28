@@ -1,3 +1,5 @@
+import Section from './components/Section'
+
 import Button from '@/components/button'
 import Carousel from '@/components/carousel'
 import Modal from '@/components/modal'
@@ -9,6 +11,7 @@ export default function Home() {
     <main className="mx-auto max-w-5xl px-4 lg:px-8">
       <Space />
       <Carousel />
+      <Section />
       <Space />
       <PostsCarousel />
       <Space />
