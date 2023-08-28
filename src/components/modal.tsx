@@ -29,11 +29,11 @@ function Modal({
       <div onClick={openModal}>{children}</div>
       {isModalOpen && (
         <div
-          className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-black/70 backdrop-blur-xl transition-opacity delay-700 duration-1000"
+          className="bg-primary/60 fixed inset-0 z-50 flex h-screen w-screen items-center justify-center backdrop-blur-xl transition-opacity delay-700 duration-1000"
           onClick={closeModal}
         >
           <div
-            className="relative h-[489px] w-[794px] scale-100 transform rounded-lg bg-gray-400 p-3 transition-transform delay-1000 duration-1000"
+            className="bg-modal relative h-[489px] w-[794px] scale-100 transform rounded-lg p-3 shadow-lg transition-transform delay-1000 duration-1000"
             onClick={(e) => {
               e.stopPropagation()
             }}
@@ -41,7 +41,7 @@ function Modal({
             <button
               type="button"
               onClick={closeModal}
-              className="absolute right-4 text-3xl font-semibold"
+              className="absolute right-4 text-3xl font-semibold text-black"
             >
               &#10005;
             </button>
