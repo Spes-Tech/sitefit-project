@@ -1,9 +1,8 @@
-import Section from './components/Section'
-
 import Button from '@/components/button'
 import Carousel from '@/components/carousel'
 import Modal from '@/components/modal'
 import PostsCarousel from '@/components/postCarousel'
+import Section from '@/components/Section'
 import Space from '@/components/space'
 
 export default function Home() {
