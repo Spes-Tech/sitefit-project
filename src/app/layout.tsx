@@ -3,10 +3,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 
-
-import Section from './components/Section'
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from './components/Footer'
+import Header from './components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,17 +17,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-      <Header />
-      <main className="container mx-auto p-4">
-        {/* Conteúdo da sua página */}
-      </main>
+        <Header />
         {children}
-
-        <div>
-          {/* Footer */}
-          <Footer />
-          <Section /> {/* Usando o componente Section */}
-        </div>
+        <Footer />
       </body>
     </html>
   )
