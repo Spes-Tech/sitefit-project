@@ -15,7 +15,7 @@ export default function Home() {
       <Space />
       <PostsCarousel />
       <Space />
-      <Modal className="text-center">
+      <Modal className="relative text-center">
         <Button>Open modal</Button>
       </Modal>
       <Space />

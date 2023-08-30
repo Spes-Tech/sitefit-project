@@ -2,6 +2,8 @@
 
 import { ReactNode, useState } from 'react'
 
+import Form from './form'
+
 interface ClassProps {
   className?: string
 }
@@ -38,11 +40,11 @@ function Modal({
       </div>
       {isModalOpen && (
         <div
-          className="bg-primary/60 fixed inset-0 z-50 flex h-screen w-screen items-center justify-center backdrop-blur-xl transition-opacity delay-700 duration-1000"
+          className="fixed inset-0 z-50 flex h-screen w-screen items-center justify-center bg-primary/60 backdrop-blur-xl transition-opacity delay-700 duration-1000"
           onClick={closeModal}
         >
           <div
-            className="bg-modal relative h-[489px] w-[794px] scale-100 transform rounded-lg p-3 shadow-lg transition-transform delay-1000 duration-1000"
+            className="relative h-[489px] w-[794px] scale-100 transform rounded-lg bg-modal p-3 shadow-lg transition-transform delay-1000 duration-1000"
             onClick={(e) => {
               e.stopPropagation()
             }}
@@ -54,6 +56,7 @@ function Modal({
             >
               &#10005;
             </button>
+            <Form />
           </div>
         </div>
       )}
