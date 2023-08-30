@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto">
+    <footer className="h-64 bg-secondary p-4 text-white">
+      <div className="mx-auto max-w-5xl px-4 lg:px-8">
         <p>&copy; 2023 Spes-Tech</p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
